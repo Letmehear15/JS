@@ -1,0 +1,57 @@
+body {
+    background-image: url('img/back.jpg');
+}
+.contener{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.act {
+    display: flex;
+    flex-direction: column;
+}
+.filters {
+    display: flex;
+    justify-content: space-between;
+}
+.btn:hover img {
+    opacity: 0.7;
+}
+.full {
+    filter: drop-shadow(3px 3px 3px);
+}
+.mini-pic{
+    order: -1;
+    display: flex;
+    flex-direction: column;
+}
+.btn,
+.btn-pic  {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    cursor: pointer;
+}
+.btn-pic:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(3px 0 3px) drop-shadow(-3px 0 3px);
+}
+.grayscale{
+    filter: grayscale(0.7);
+}
+.saturate {
+    filter: saturate(2); 
+}
+.sepia {
+    filter: sepia(0.7);
+}
+.hue-rotate {
+    filter: hue-rotate(200deg);
+}
+.blur {
+    filter: blur(1px);
+}
+.self {
+    filter: contrast(0.67) saturate(2.5) hue-rotate(-30deg) sepia(0.4);;
+}
