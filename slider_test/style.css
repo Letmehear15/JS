@@ -1,7 +1,9 @@
 button {
-    padding: 0;
-    
-    
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid rgb(110, 106, 106);
+    background-color: transparent;
+    cursor: pointer;
 }
 .container {
     display: flex;
@@ -11,6 +13,25 @@ button {
     width: 100%;
     height: 500px;
 }
+.photo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    height: 300px;
+}
+.buttons {
+    position: absolute;
+    bottom: 10px;
+    left: auto;
+}
+.button_bg {
+    background-color: rgb(110, 106, 106);
+}
 .button_style:hover {
-   background-color: aqua;
+   background-color: rgb(110, 106, 106);
+}
+.photo:hover button {
+    transform: scale(1.2);
 }
